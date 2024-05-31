@@ -48,8 +48,9 @@
 }
 
 #highlight {
-  padding: 24px;
-  background: linear-gradient(0deg, rgb(227, 255, 253) rgb(202, 243, 240));
+  background: linear-gradient(0deg, rgb(227, 255, 253), rgb(202, 243, 240));
+  padding: 20px;
+  min-height: calc(100vh - 50px);
 }
 
 #highlight h2 {
