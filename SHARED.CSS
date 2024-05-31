@@ -54,22 +54,25 @@ header a:hover {
 }
 
 footer {
-  background: linear-gradient(70deg, rgb(24, 24, 24) rgb(25, 29, 29));
-  padding: 36px;
+  background: linear-gradient(70deg, rgb(24, 24, 24), rgb(25, 29, 29));
+  color: white;
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+  bottom: 0;
 }
 
-footer ul {
+.social-media {
   display: flex;
   justify-content: center;
-  /* padding: 40px; */
-}
-footer li {
-  width: 80px;
-  height: 80px;
-  margin: 0 50xp;
+  gap: 20px;
 }
 
-footer img {
-  width: 100%;
-  height: 100px;
+.social-media a {
+  display: inline-block;
+}
+
+.social-media img {
+  width: 60px;
+  height: 60px;
 }
