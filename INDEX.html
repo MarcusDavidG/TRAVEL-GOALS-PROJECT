@@ -5,13 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/SHARED.CSS" />
     <link rel="stylesheet" href="/STYLE.css" />
+     <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
 
     <title>Travel Goals</title>
   </head>
   <body>
     <header>
-      <div id="page-logo">
-        <a href="/INDEX.html">Travel Goals</a>
+      <div class="logo">
+            <a href="/INDEX.html"> <!-- Link to homepage -->
+                <img src="/IMAGES/ICONS/logo.png" alt="Traveling Dreams & Destinations"> <!-- Update this path -->
+            </a>
+        </div>
       </div>
       <nav>
         <ul>
@@ -23,37 +36,21 @@
     <main>
       <section id="hero">
         <div id="hero-content">
-          <h1>loco's Travel Page</h1>
+          <h1>Dream, Discover and Travel</h1>
           <p>Let's explore the world together!</p>
           <a href="/PLACES.html">Discover Places</a>
         </div>
       </section>
-      <section id="highlight">
-        <h2>Highlights</h2>
-        <ul id="destinations">
-          <li class="destination">
-            <img
-              src="/IMAGES/PLACES/Miami USA.jpg"
-              alt="Miami streets on sunny
-            day"
-            />
-            <p>Miami <strong>USA</strong></p>
-          </li>
-          <li class="destination">
-            <img
-              src="/IMAGES/PLACES/Munich GERMANY.jpg"
-              alt="Munich stadium in winter"
-            />
-            <p>Munich <strong>GERMANY</strong></p>
-          </li>
-          <li class="destination">
-            <img
-              src="/IMAGES/PLACES/Barcelona SPAIN.jpg"
-              alt="Palm Beach in Barcelona"
-            />
-            <p>Barcelona <strong>SPAIN</strong></p>
-          </li>
-        </ul>
+      <section class="highlight">
+
+        <div class="highlight-title">HIGHLIGHTS</div>
+     <div class="carousel">
+       <div><img src="/IMAGES/PLACES/balibeach.jpeg" alt="Image 1" /></div>
+       <div><img src="/IMAGES/PLACES/Miami USA.jpg" alt="Image 2" /></div>
+       <div><img src="/IMAGES/PLACES/glasses.jpg" alt="Image 3" /></div>
+       <div><img src="/IMAGES/PLACES/sydney.jpeg" alt="Image 4" /></div>
+       <div><img src="/IMAGES/PLACES/tokyo.jpeg" alt="Image 5" /></div>
+     </div>
       </section>
     </main>
     <footer>
@@ -66,5 +63,24 @@
         </a>
       </div>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+        $(".carousel").slick({
+          infinite: true,
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 2000,
+          dots: true,
+          arrows: false,
+        });
+      });
+    </script>
   </body>
 </html>
