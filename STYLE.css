@@ -1,3 +1,13 @@
+.header .logo {
+  position: absolute;
+  left: 50px; /* Adjust the position as needed */
+  top: 10px; /* Adjust the position as needed */
+}
+.header .logo img {
+  width: 200px; /* Adjust the width as needed */
+  height: 200px;
+}
+
 #hero {
   height: 800px;
   background-image: url("/IMAGES/PLACES/drew-dau-GA2sc8nIOsk-unsplash.jpg");
@@ -47,52 +57,27 @@
   background-color: rgb(255, 238, 0);
 }
 
-#highlight {
-  background: linear-gradient(0deg, rgb(227, 255, 253), rgb(202, 243, 240));
+.carousel {
+  width: 80%;
+  margin: 0 auto;
   padding: 20px;
-  min-height: calc(70vh - 50px);
+  margin-right: 10px 10px;
 }
-
-#highlight h2 {
-  text-transform: uppercase;
+.carousel img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.slick-slide {
   text-align: center;
-  font-size: 50px;
-  color: rgb(59, 65, 64);
-  margin: 24px 0;
 }
-
-#destinations {
-  display: flex;
-  width: 90%;
-  margin: auto;
-  margin-bottom: 40px;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  list-style: none;
-  padding: 0;
-}
-
-.destination {
-  margin: 0 20px;
-  text-transform: uppercase;
-}
-
-.destination p {
+.highlight-title {
   text-align: center;
   font-size: 24px;
-  color: rgb(124, 123, 123);
-  margin: 20px 0;
+  font-weight: bold;
+  margin-top: 20px;
 }
 
-.destination img {
-  height: 200px;
-  width: 100%;
-  box-shadow: 2px 4px 8px rgb(68, 67, 67);
-  border-radius: 10px;
-  object-fit: cover;
-}
-
-.destination strong {
-  color: rgb(0, 160, 117);
+.highlight {
+  background: linear-gradient(0deg, rgb(227, 255, 253), rgb(202, 243, 240));
 }
